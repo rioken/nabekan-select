@@ -117,7 +117,7 @@
 
 <div class="section03_text">
 <ul>
-<li class="balloon1-right"><p>コスパよく＆自分たちらしくリフレッシュしたい<br>という私たちにぴったり！</p>
+<li class="balloon1-right"><p>コスパよく＆自分たちらしくリフォームしたい<br>という私たちにぴったり！</p>
 </li>
 <li><img src="common/images/section03_02img.png" alt="ハイグレード、スタンダードコースお客様">
 </li>
@@ -454,12 +454,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
 </script>
 <script>
-    $("btn btn-ghost").click(function(){
-    	var ans = $("div").offset();
-    	var myLeft = ans.left;
-    	var myTop = ans.top;
-    	alert("left:"+ myLeft +"  top:"+myTop);
-    })
+      const pos = $('h1').offset();
+     
+    console.log( pos );
 </script>
 </body>
 </html>
