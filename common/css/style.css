@@ -1,0 +1,354 @@
+@media screen and (min-width: 768px){
+
+html{
+font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    -ms-overflow-x: hidden;
+        overflow-x: hidden;
+}
+
+#main{
+	background: #13315F;
+	color: #black;
+   }
+
+ul li{
+  list-style-type: none;
+}
+
+h5{
+text-align: center;
+font-weight: bold;
+}
+
+
+.bg-section{
+	position: absolute;
+    left: 0;
+    top: 0;
+	width: 100%;
+	height: 100vh;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+ #section04,#section05,#section06 p{
+text-align: center;
+     
+    }
+
+
+.oleo{
+padding: 20px;
+    font-family: 'Georgia', curs;
+}
+.title{
+    letter-spacing: 4px;
+}
+
+.table{
+    background-color: #FFF;
+    color: #333;
+}
+.btn-ghost{
+    border: 1px solid #fff;
+    color: #FFF;
+    font-size: 2rem;
+  font-family: 'Georgia';
+}
+.btn-ghost:hover{
+    text-decoration: none;
+    background: #080126;
+    border-color: #080126;
+    color: #FFF;
+  
+}
+
+.logo{
+  width: 35%;
+}
+#section01{
+    position: relative;
+    z-index: 2;
+
+}
+#section01 .content-inner{
+    max-width: 698px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    color: white;
+   margin-bottom: 70px;
+}
+#section01 .content-inner span{
+color: black;
+background: white;
+padding: 10px;
+width: 123px;
+display: block;
+
+}
+
+#section01 .content-inner ul{
+display: flex;
+justify-content: space-between;
+}
+
+#section01 .inner-el{
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
+    padding: 0 10px;
+    max-width:50px;
+}
+
+#section01 .inner-el{
+        padding: 0 10px;
+        font-size: 3rem;
+    }
+
+
+h3{
+font-size: 2.5em;
+}
+h3 span{
+font-size: 0.5em;
+}
+#section02{
+    background: white;
+    position: relative;
+    z-index: 4;
+    padding:10vh 0;
+}
+#section02 ul{
+line-height: 2em;
+}
+
+.section02_text ul{
+display: flex;
+align-items: center;
+width: 80%;
+margin: 0 auto;
+
+}
+.section02_text li{
+  width: 50%;
+}
+.section02_text li img{
+  width: 70%;
+float: right;
+margin-right: 100px;
+}
+
+#fog01{
+    position: absolute;
+    bottom: -30vh;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+#fog01 img{
+    width: 100%;
+}
+
+#section03{
+    position: relative;
+    z-index: 3;
+   background: white;
+    overflow: hidden;
+  text-align: center;
+}
+
+
+.balloon1-right {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 15px 1.5em 0;
+  padding: 20px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 20px;
+  background: #e0edff;
+}
+
+.balloon1-right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #e0edff;
+}
+
+.balloon1-right p {
+  margin: 0;
+  padding: 0;
+}
+.section03_text ul{
+display: flex;
+align-items: center;
+}
+.section03_text li{
+width: 100%;
+}
+.section03_text li img{
+width: 45%;
+float: right;
+margin-right: 50%;
+}
+
+#fog02{
+    position: absolute;
+    bottom: -50vh;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+#fog02 img{
+    width: 100%;
+}
+#section04{
+    position: relative;
+    background: #E1E7EE;
+    z-index: 3;
+}
+#section05{
+position: relative;
+z-index: 3;
+background: #163D7B;
+overflow: hidden;
+color: white;
+padding: 20px;
+}
+#section05 li{
+	text-align: center;
+	margin-top: 10px;
+}
+#section05 li p{
+	text-align: left;
+}
+
+h4{
+background-color: black;
+width: 20%;
+line-height: 2em;
+text-align: center;
+color: white;
+}
+
+.logo li{
+	margin-left: 25px;
+}
+
+.logo img{
+	width: 100%;
+}
+.logo ul{
+	display: flex;
+}
+
+#section05 img{
+    width: 80%;
+}
+.kodomomirai {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.kodomomirai li::first-child{
+
+}
+#section05 .kodomomirai img{
+    width: 30%;
+	
+}
+#section06{
+    position: relative;
+    background: #E1E7EE;
+    z-index: 3;
+padding: 20px;
+  }
+
+#section06 li{
+	text-align: center;
+	margin-top: 10px;
+list-style-type: none;
+}
+#section06 li p{
+	text-align: left;
+}
+
+#section06 .logo img{
+width: 80%;
+}
+#section06 img{
+    width:50%;
+}
+.TOTO{
+ width:100%;
+
+}
+.Explanation ul{
+	display: flex;
+	align-items: center;
+}
+#section07{
+    position: relative;
+    background: #FFF;
+    z-index: 3;
+    padding: 10vh 0;
+}
+#section07 img{
+    width: 50%;
+}
+.CompanyProfile ul{
+	display: flex;
+	align-items: center;
+}
+#Contact{
+background-color: white;
+text-align: center;
+margin-bottom: 55px;
+padding: 10px;
+}
+
+.Contactbtn {
+background: #163D7B;
+color: white;
+text-align: center;
+color: #FFF;
+font-size: 2rem;
+border-radius: 10px;
+padding: 10px;
+}
+
+.Contactbtn:hover {
+  text-decoration: none;
+  background: #080126;
+  border-color: #080126;
+  color: #FFF;
+border-radius: 10px;
+padding: 10px;
+}
+#footer{
+    color: white;
+    padding: 50px 20px;
+    font-size: 12px;
+    text-align: center;
+    background: #163D7B;
+}
+
+
+}
