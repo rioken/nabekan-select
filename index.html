@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <title>nabekan×select</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 <meta name="viewport" content="width=device-width,user-scalable=no">
 <meta name="keywords" content="練馬リフォーム, 株式会社ナベカン, 直結工事, マンションリフォーム">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -13,7 +14,12 @@
 <link rel="stylesheet" href="common/css/prittyprint.css">
 </head>
 
+
 <body>
+<!--TOPへ戻るここから-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<div id="page_top"><a href="#"></a></div>
+<!--TOPへ戻るここまで-->
 <div id="luxy">
 <main id="main">
 <div id="section01" class="vh-element" data-props="padding-top," data-values="45,45">
@@ -58,7 +64,8 @@
 <h2>水回り４点set 特別プラン</h2>
 <p>暮らしの時間をもっと素敵に<br>ナベカンおすすめのナベカンセレクト３コースをご紹介</p>
 
-<ul>
+
+<ul id="btn">
  <div><a href="#Premium" class="btn btn-ghost"　class="current">Premium</a></div>
  <div><a href="#Highgrade" class="btn btn-ghost">Highgrade</a></div>
  <div><a href="#Standard" class="btn btn-ghost">Standard</a></div>
@@ -440,23 +447,40 @@
             </div>
         </footer>
 	</div>
-	<script src="https://rawgit.com/google/code-prettify/master/loader/run_prettify.js" defer></script>
-    <script src="common/js/script.js" charset="utf-8"></script>
-	<script src="common/js/luxy.js" charset="utf-8"></script>
-	<script>
+<script src="https://rawgit.com/google/code-prettify/master/loader/run_prettify.js" defer></script>
+<script src="common/js/script.js" charset="utf-8"></script>
+<script src="common/js/luxy.js" charset="utf-8"></script>
+
+<script>
 		luxy.init({
 			wrapper: '#luxy',
 			targets : '.luxy-el',
 			wrapperSpeed:  0.08
 		});
-	</script>
-<!--ジェイクエリ-->
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
 </script>
-<script>
-      const pos = $('h1').offset();
-     
-    console.log( pos );
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script-->
+<script>	
+$(function(){
+  // #で始まるリンクをクリックした場合
+  $('a[href^="#"]').click(function() {
+    // スクロールの速度
+    let speed = 500;
+    // スクロールタイプ
+    let type = 'swing';
+    // href属性の取得
+    let href= $(this).attr("href");
+    // 移動先の取得（hrefが#indexならトップ$(html)に、）
+    let target = $(href == "#index" ? 'html' : href);
+    // 移動先のポジション取得
+    let position = target.offset().top;
+    // animateでスムーススクロール
+    $('body,html').animate({scrollTop:position}, speed, type);
+    return false;
+  });
+});
 </script>
+
+
 </body>
 </html>
